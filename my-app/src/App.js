@@ -13,17 +13,13 @@ export default class App extends Component {
         super(props);
 
         this.loadData = this.loadData.bind(this);
-        this.loadData();
-
+        this.headArray = [];
+        this.bodyArray = [];
     }
 
     loadData = function(e) {
 
-        let value = '';
-
-        if (typeof(e) !== 'undefined'){
-            value = e.target.value;
-        }
+        let value = e.target.value;
 
         if (value === 'short') {
             this.headArray = [];

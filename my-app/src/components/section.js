@@ -10,7 +10,7 @@ export default class Section extends Component {
     constructor(props) {
         super(props);
 
-        this.dataBodyInitial = this.props.bodyArray;
+        this.bodyArrayFiltered = this.props.bodyArray;
 
         this.pagesQty = {
             'qty': Math.ceil(this.props.bodyArray.length / 50),
@@ -26,18 +26,18 @@ export default class Section extends Component {
     }
 
     componentWillReceiveProps = function() {
-        this.dataBodyInitial = this.props.bodyArray;
-        this.pagesQty.qty = Math.ceil(this.props.bodyArray.length / 50);
+        this.bodyArrayFiltered = this.props.bodyArray;
+        this.pagesQty.qty = Math.ceil(this.bodyArrayFiltered.length / 50);
     };
 
     dataFilter = function(e) {
         let value = e.target.value.trim().toLowerCase();
 
         if( value === '' ) {
-            this.props.bodyArray = this.dataBodyInitial;
+            this.bodyArrayFiltered = this.props.bodyArray;
         }
         else {
-            this.props.bodyArray = this.dataBodyInitial.filter((item) => {
+            this.bodyArrayFiltered = this.props.bodyArray.filter((item) => {
                 return item[1].toLowerCase().includes(value);
             });
         }
@@ -64,10 +64,11 @@ export default class Section extends Component {
             <Row>
                 <Col sm="4">
                     <InputFilter dataFilter={this.dataFilter} />
+
                     <TablePagination pagesQty={this.pagesQty} pagination={this.pagination} />
                 </Col>
                 <Col sm="12" md="8">
-                    <DataTable tBody={this.props.bodyArray} tHead={this.props.headArray} paginationData={this.paginationData} />
+                    <DataTable tBody={this.bodyArrayFiltered} tHead={this.props.headArray} paginationData={this.paginationData} />
                 </Col>
             </Row>
         )
