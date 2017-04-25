@@ -12,7 +12,7 @@ export default class TableBody extends Component {
     tableTemplate = function() {
         return this.props.data.map((row, i) => {
             if ( i >= this.props.paginationData.start && i <= this.props.paginationData.end ) {
-                return <tr key={'trBody' + i}>{this.makeColumns(row)}</tr>
+                return <tr onClick={() => this.props.dataOutput(row)} key={'trBody' + i}>{this.makeColumns(row)}</tr>
             }
             else {
                 return false

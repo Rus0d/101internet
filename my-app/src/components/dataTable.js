@@ -44,7 +44,7 @@ export default class DataTable extends Component {
         return (
             <Table>
                 <TableHead data={this.props.tHead} sort={this.sort} />
-                <TableBody data={this.props.tBody} paginationData={this.props.paginationData} />
+                <TableBody data={this.props.tBody} paginationData={this.props.paginationData} dataOutput={this.props.dataOutput} />
             </Table>
         )
     }

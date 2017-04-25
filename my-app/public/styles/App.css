@@ -1,24 +1,16 @@
-.App {
-  text-align: center;
+.dataOutput {
+
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+.dataOutput_wrapper {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+  padding: 7px;
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+.dataOutput_title {
+  margin-bottom: 0;
 }
 
-.App-intro {
-  font-size: large;
-}
-
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.dataOutput_value {
+  margin-bottom: 0;
 }
