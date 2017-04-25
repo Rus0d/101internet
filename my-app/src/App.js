@@ -64,15 +64,15 @@ export default class App extends Component {
     render() {
         return (
 
-                <Container>
-                    <Row className="controlPanel">
-                        <Col sm="12">
-                            <FormatType loadData={this.loadData}/>
-                            <AddButton addButton={this.addTable} />
-                        </Col>
-                    </Row>
-                    {this.sectionArr}
-                </Container>
+            <Container>
+                <Row className="controlPanel">
+                    <Col sm="12">
+                        <FormatType loadData={this.loadData}/>
+                        <AddButton addButton={this.addTable} />
+                    </Col>
+                </Row>
+                {this.sectionArr}
+            </Container>
         )
     }
 }
