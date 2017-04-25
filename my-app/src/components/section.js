@@ -9,7 +9,6 @@ export default class Section extends Component {
 
     constructor(props) {
         super(props);
-
         this.bodyArrayFiltered = this.props.bodyArray;
 
         this.pagesQty = {
@@ -25,8 +24,8 @@ export default class Section extends Component {
         this.pagination = this.pagination.bind(this);
     }
 
-    componentWillReceiveProps = function() {
-        this.bodyArrayFiltered = this.props.bodyArray;
+    componentWillReceiveProps = function(nextProps) {
+        this.bodyArrayFiltered = nextProps.bodyArray;
         this.pagesQty.qty = Math.ceil(this.bodyArrayFiltered.length / 50);
     };
 

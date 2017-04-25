@@ -2,59 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="81945333-4ec6-4ba2-97d2-327158dbb4fc" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/html/dist/images/bg-1-re.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/html/dist/images/bg-1-sm-re.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/html/dist/images/bg-1-sm.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/html/dist/images/bg-1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/html/dist/images/bg-2-re.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/html/dist/images/bg-2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/html/dist/images/bg-3-re.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/html/dist/images/bg-3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/html/dist/images/bg-4-re.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/html/dist/images/bg-4.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/html/dist/images/bg-5-re.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/html/dist/images/bg-5.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/html/dist/images/bitmap-copy-6.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/html/dist/images/bitmap-copy-6@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/html/dist/images/briefcase-69.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/html/dist/images/briefcase-69.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/html/dist/images/clinical-logo-hover.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/html/dist/images/clinical-logo-hover.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/html/dist/images/clinical-logo.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/html/dist/images/clinical-logo.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/html/dist/images/down-arrow-56-hover.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/html/dist/images/down-arrow-56-hover.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/html/dist/images/down-arrow-56.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/html/dist/images/down-arrow-56.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/html/dist/images/drug-logo-hover.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/html/dist/images/drug-logo-hover.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/html/dist/images/drug-logo.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/html/dist/images/drug-logo.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/html/dist/images/group-2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/html/dist/images/group-2.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/html/dist/images/hero-molecule.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/html/dist/images/hero-molecule@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/html/dist/images/logo.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/html/dist/images/logo.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/html/dist/images/logo@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/html/dist/images/molecule-10.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/html/dist/images/molecule-10.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/html/dist/images/monograph.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/html/dist/images/monograph.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/html/dist/images/monograph@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/html/dist/images/overview-bg-re.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/html/dist/images/overview-bg.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/html/dist/images/overview-logo-hover.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/html/dist/images/overview-logo-hover.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/html/dist/images/overview-logo.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/html/dist/images/overview-logo.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/html/dist/images/page-1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/html/dist/images/page-1.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/html/dist/images/page-1@2x.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/html/dist/images/page-1_2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/html/dist/images/page-1_2@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/html/dist/images/pre-header-icon.png" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/my-app/src/App.js" afterPath="$PROJECT_DIR$/my-app/src/App.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/my-app/src/components/section.js" afterPath="$PROJECT_DIR$/my-app/src/components/section.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -70,30 +18,8 @@
       <file leaf-file-name="section.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/my-app/src/components/section.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="54" lean-forward="false" selection-start-line="12" selection-start-column="54" selection-end-line="12" selection-end-column="54" />
-              <folding>
-                <element signature="e#0#41#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="App.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/my-app/src/App.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="34" column="32" lean-forward="true" selection-start-line="34" selection-start-column="32" selection-end-line="34" selection-end-column="32" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="inputFilter.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/my-app/src/components/inputFilter.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="289">
+              <caret line="35" column="58" lean-forward="true" selection-start-line="35" selection-start-column="58" selection-end-line="35" selection-end-column="58" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
@@ -314,12 +240,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1493143458046</updated>
-      <workItem from="1493143459519" duration="2135000" />
+      <workItem from="1493143459519" duration="5086000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2135000" />
+    <option name="totallyTimeSpent" value="5086000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -342,7 +268,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3293011" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.10887097" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26209676" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -398,6 +324,32 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/my-app/src/components/tableHead.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my-app/src/components/tablePagination.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my-app/src/components/tableBody.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/my-app/src/components/inputFilter.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -408,10 +360,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/my-app/src/components/formatType.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my-app/src/components/dataTable.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-51">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/my-app/src/components/section.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="54" lean-forward="false" selection-start-line="12" selection-start-column="54" selection-end-line="12" selection-end-column="54" />
+        <state relative-caret-position="289">
+          <caret line="35" column="58" lean-forward="true" selection-start-line="35" selection-start-column="58" selection-end-line="35" selection-end-column="58" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>
