@@ -1,0 +1,224 @@
+@import "var";
+@import "mixins";
+@import url('https://fonts.googleapis.com/css?family=Lato:400,400i,900,900i');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700,800');
+
+body {
+    @include lr(14px, 1.5);
+    background-color: $w;
+
+    .template__wrapper_large {
+        padding: 0;
+        height: 100%;
+        position: relative;
+        overflow: hidden;
+
+        header {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: $header-height;
+            width: 100%;
+            overflow: hidden;
+            z-index: 500;
+            transition: .4s ease-in-out;
+            padding: 8px 0;
+            border-bottom: 1px solid $b;
+
+            .header__nav {
+                    display: block;
+                    vertical-align: top;
+                    background-color: $w;
+                    @include inline-block-wrapper(100%);
+
+                    li {
+                        display: inline-block;
+                        width: auto;
+                        @include sb(14px, 19px);
+                        text-align: left;
+                        padding: 0 10px;
+                        border-right: 1px solid $b;
+                        cursor: pointer;
+                        transition: 0.4s ease-in-out;
+                        color: $b;
+                        background-color: $w;
+
+                        &:active {
+                            color: #0bF;
+                            border-right: 1px solid #0bF;
+                        }
+                        @media (min-width: $tablet-landscape) {
+                            &:hover {
+                                color: #0bF;
+                                border-right: 1px solid #0bF;
+                            }
+                        }
+
+                        &.active {
+                            color: #0bF;
+                            border-right: 1px solid #0bF;
+                        }
+
+                        &:last-child {
+                            border-right: none;
+                        }
+                    }
+                }
+        }
+
+        .template__wrapper_small {
+            position: absolute;
+            top: $header-height;
+            bottom: 0;
+            left: 0;
+            right: 0;
+
+            .template__small_sidebar {
+                display: block;
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 300px;
+                height: 100%;
+                padding: 10px 5px;
+                overflow: auto;
+                border-right: 1px solid $b;
+                transition: .4s ease-in-out;
+
+                li {
+                    display: block;
+                    position: relative;
+                    @include lr(14px, 24px);
+
+                    ul {
+                        padding-left: 15px;
+                    }
+
+                    i {
+                        margin-right: 10px;
+                    }
+
+                    p{
+                        padding: 0 5px;
+                        cursor: pointer;
+
+                        &.active {
+                            background-color: #eeeeee;
+                            color: #0bF;
+                        }
+
+                        &:active {
+                            background-color: #eeeeee;
+                            color: #0bF;
+                        }
+                        @media (min-width: $tablet-landscape) {
+                            &:hover {
+                                color: #0bF;
+                                background-color: #eeeeee;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .template__content_wrapper {
+                display: block;
+                position: absolute;
+                height: 100%;
+                left: 0;
+                right: 0;
+                top: 0;
+                padding-top: $header-height;
+                margin-left: 300px;
+                transition: .4s ease-in-out;
+
+                .template__content_wrapper_breadcrumbs {
+                    display: block;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    height: $header-height;
+                    width: 100%;
+                    z-index: 500;
+                    transition: .4s ease-in-out;
+                    padding: 8px 0;
+                    vertical-align: top;
+                    background-color: $w;
+                    border-bottom: 1px solid $b;
+                    @include inline-block-wrapper(100%);
+
+                    &>li {
+                        display: inline-block;
+                        position: relative;
+                        width: auto;
+                        @include sr(12px, 19px);
+                        text-align: left;
+                        padding: 0 15px 0 10px;
+                        cursor: pointer;
+                        transition: 0.4s ease-in-out;
+                        color: $b;
+                        background-color: $w;
+
+                        &:after {
+                            content: ">";
+                            position: absolute;
+                            right: 0;
+                            line-height: 20px;
+                            font-size: 16px;
+                        }
+
+                        &:last-child {
+                            &:after {
+                                display: none;
+                            }
+                        }
+
+                        &.active {
+                            color: #0bF;
+                        }
+
+                        &:active {
+                            color: #0bF;
+                        }
+                        @media (min-width: $tablet-landscape) {
+                            &:hover {
+                                color: #0bF;
+                            }
+                        }
+                    }
+                }
+
+                .template__content {
+                    display: block;
+                    position: relative;
+                    height: 100%;
+                    overflow-y: auto;
+                    overflow-x: hidden;
+                    //margin-top: $header-height;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: $phone) {
+
+    body {
+        .template__wrapper_large {
+            .template__wrapper_small {
+                position: absolute;
+
+                .template__small_sidebar {
+                    width: 0;
+                    overflow: hidden;
+                    visibility: hidden;
+                }
+
+                .template__content_wrapper {
+                    margin-left: 0;
+                }
+            }
+        }
+    }
+
+}
