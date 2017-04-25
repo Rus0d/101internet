@@ -6,24 +6,20 @@ import { Container, Row, Col } from 'reactstrap';
 import jsonDataShort from './jsonShort.json';
 import jsonDataLong from './jsonLong.json';
 
-
 export default class App extends Component {
 
     constructor(props) {
         super(props);
 
-        this.loadData = this.loadData.bind(this);
-        this.loadData();
+        this.headArray = [];
+        this.bodyArray = [];
 
+        this.loadData = this.loadData.bind(this);
     }
 
     loadData = function(e) {
 
-        let value = '';
-
-        if (typeof(e) !== 'undefined'){
-            value = e.target.value;
-        }
+        let value = e.target.value;
 
         if (value === 'short') {
             this.headArray = [];

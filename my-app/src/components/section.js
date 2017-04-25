@@ -10,52 +10,68 @@ export default class Section extends Component {
     constructor(props) {
         super(props);
 
-        this.dataBodyInitial = this.props.bodyArray;
+        this.dataFiltered = this.props.bodyArray;
 
-        this.pagesQty = {
-            'qty': Math.ceil(this.props.bodyArray.length / 50),
+        this.state = {
+            pagesQty: {
+                qty: 1,
+                activePage: 1
+            },
+            paginationData: {
+                start: 0,
+                end: 49
+            },
+            data: this.props.bodyArray
+        };
+
+        /*this.pagesQty = {
+            'qty': Math.ceil(this.dataFiltered.length / 50),
             'activePage': 1
         };
         this.paginationData = {
             'start': 0,
             'end': 49
-        };
+        };*/
 
-        this.dataFilter = this.dataFilter.bind(this);
         this.pagination = this.pagination.bind(this);
     }
 
     componentWillReceiveProps = function() {
-        this.dataBodyInitial = this.props.bodyArray;
-        this.pagesQty.qty = Math.ceil(this.props.bodyArray.length / 50);
+        //this.dataFiltered = this.props.bodyArray;
+        //this.state.pagesQty.qty = Math.ceil(this.dataFiltered.length / 50);
+
     };
 
-    dataFilter = function(e) {
-        let value = e.target.value.trim().toLowerCase();
+    update = function(data) {
+        //this.dataFiltered = data;
 
-        if( value === '' ) {
-            this.props.bodyArray = this.dataBodyInitial;
-        }
-        else {
-            this.props.bodyArray = this.dataBodyInitial.filter((item) => {
-                return item[1].toLowerCase().includes(value);
-            });
-        }
+        console.log(data);
 
-        this.pagination(1);
+        this.setState(data);
+        this.pagination(this.state.pagesQty.activePage);
     };
 
     pagination = function(e) {
 
-        this.pagesQty.activePage = e;
+        /*this.pagesQty.activePage = e;
         let start = (e-1)*50, end = start+49;
 
         this.paginationData = {
             'start': start,
             'end': end
-        };
+        };*/
 
-        this.setState({});
+        this.setState(
+            {
+                pagesQty: {
+                    activePage: e
+                },
+                paginationData: {
+                    start: (e-1)*50,
+                    end: (e-1)*50+49
+                }
+            }
+        );
     };
 
     render() {
@@ -63,11 +79,11 @@ export default class Section extends Component {
         return (
             <Row>
                 <Col sm="4">
-                    <InputFilter dataFilter={this.dataFilter} />
-                    <TablePagination pagesQty={this.pagesQty} pagination={this.pagination} />
+                    <InputFilter data={this.props.bodyArray} update={this.update} />
+                    <TablePagination pagesQty={this.state.pagesQty} pagination={this.pagination} />
                 </Col>
                 <Col sm="12" md="8">
-                    <DataTable tBody={this.props.bodyArray} tHead={this.props.headArray} paginationData={this.paginationData} />
+                    <DataTable tBody={this.state.data} tHead={this.props.headArray} paginationData={this.state.paginationData} />
                 </Col>
             </Row>
         )
