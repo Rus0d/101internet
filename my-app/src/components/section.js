@@ -79,7 +79,7 @@ export default class Section extends Component {
     render() {
 
         return (
-            <Row>
+            <Row className="tables">
                 <Col sm="4">
                     <InputFilter dataFilter={this.dataFilter} />
                     <TablePagination pagesQty={this.pagesQty} pagination={this.pagination} />
@@ -91,6 +91,5 @@ export default class Section extends Component {
             </Row>
         )
     }
-
 }
 

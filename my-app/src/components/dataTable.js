@@ -30,7 +30,6 @@ export default class DataTable extends Component {
                     return -1;
                 }
                 return 0;
-
             });
 
         }

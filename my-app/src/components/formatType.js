@@ -1,7 +1,21 @@
 import React, { Component } from 'react';
-import { FormGroup, Label, Input, Row, Col } from 'reactstrap';
+import { FormGroup, Label, Row, Col } from 'reactstrap';
 
 export default class FormatType extends Component {
+
+    constructor(props) {
+        super(props);
+
+        this.state = {selectedOption: 'short'};
+        this.handleOptionChange = this.handleOptionChange.bind(this);
+    }
+
+    handleOptionChange = function (changeEvent) {
+        this.props.loadData(changeEvent.target.value);
+        this.setState({
+            selectedOption: changeEvent.target.value
+        });
+    };
 
     render() {
         return (
@@ -11,7 +25,7 @@ export default class FormatType extends Component {
                     <Col xs="12" sm="3">
                         <FormGroup check>
                             <Label check>
-                                <Input type="radio" name="radio1" value="short" onChange={this.props.loadData} />{' '}
+                                <input type="radio" name="radio1" value="short" onChange={this.handleOptionChange} checked={this.state.selectedOption === 'short'} />{' '}
                                 Маленький
                             </Label>
                         </FormGroup>
@@ -19,7 +33,7 @@ export default class FormatType extends Component {
                     <Col xs="12" sm="3">
                         <FormGroup check>
                             <Label check>
-                                <Input type="radio" name="radio1"  value="long" onChange={this.props.loadData} />{' '}
+                                <input type="radio" name="radio1"  value="long" onChange={this.handleOptionChange} checked={this.state.selectedOption === 'long'} />{' '}
                                 Большой
                             </Label>
                         </FormGroup>
@@ -27,7 +41,7 @@ export default class FormatType extends Component {
                     <Col xs="12" sm="3">
                         <FormGroup check disabled>
                             <Label check>
-                                <Input type="radio" name="radio1" disabled />{' '}
+                                <input type="radio" name="radio1" disabled />{' '}
                                 Свой
                             </Label>
                         </FormGroup>
